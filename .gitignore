@@ -1,0 +1,15 @@
+coc/
+dconf/
+discord/
+pulse/
+systemd/
+user-dirs.dirs
+user-dirs.locale
+
+zsh/.zcompdump
+
+# Ignore plugins directory, these will be installed with a nvim +PlugInstall
+nvim/plugged/
+
+# temp ignore for todo
+todo

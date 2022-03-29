@@ -1,0 +1,45 @@
+format = """$directory$git_branch$git_commit$git_status$cmd_duration$line_break $character"""
+add_newline = true
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[cmd_duration]
+min_time = 2_000
+format = "took [$duration]($style) "
+style = "bold yellow"
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold cyan"
+read_only = "🔒"
+read_only_style = "red"
+
+[git_branch]
+format = "on [$symbol$branch]($style) "
+symbol = " "
+style = "bold purple"
+
+[git_commit]
+commit_hash_length = 7
+format = "[\\($hash$tag\\)]($style) "
+style = "bold green"
+only_detached = true
+
+[git_status]
+format = "([\\[$all_status$ahead_behind\\]]($style) )"
+conflicted = "="
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+untracked = "?"
+stashed = "$"
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = "✘"
+style = "bold red"
+ignore_submodules = false

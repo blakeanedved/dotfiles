@@ -1,0 +1,41 @@
+{
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": [
+				"c",
+				"cc",
+				"cpp",
+				"c++",
+				"objc",
+				"objcpp"
+			],
+			"rootPatterns": [
+				".ccls",
+				"compile_commands.json",
+				".git/",
+				".hg/"
+			],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}
+		},
+		"graphql": {
+			"command": "graphql-lsp",
+			"args": [
+				"server",
+				"-m",
+				"stream"
+			],
+			// customize filetypes to your needs
+			"filetypes": [
+				"typescript",
+				"typescriptreact",
+				"graphql"
+			]
+		}
+	},
+	"Lua.telemetry.enable": false
+}
