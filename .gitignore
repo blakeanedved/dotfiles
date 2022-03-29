@@ -5,6 +5,7 @@ pulse/
 systemd/
 user-dirs.dirs
 user-dirs.locale
+emacs/
 
 zsh/.zcompdump
 
